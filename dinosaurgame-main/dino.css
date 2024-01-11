@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height:100%;
+}
+.box {
+    height: 400px;;
+    width: 500px;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    
+ 
+}
+
+#bush {
+    top: 340px;
+    position:relative;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 400px
+    }
+
+    100% {
+        left:0px
+    }
+}
+
+#dino {
+    top:340px;
+    position:absolute;
+    
+}
+
+
+
+.jump {
+    animation: jump 500ms infinite linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 340px;
+    }
+
+    30% {
+        top: 260px;
+    }
+
+    70% {
+        top: 260px;
+    }
+
+    100% {
+        top: 340px;
+
+    }
+}
+#cloud1{
+    padding-top:70px;
+    left:400px;
+    position:relative;
+    animation: move1 8s infinite linear;
+}
+#cloud2{
+    
+    left:200px;
+    position:relative;
+    animation: move2 5s infinite linear;
+}
+@keyframes move1{
+    0%{
+        left:400px;
+    }
+    100%{
+        left:0px;
+    }
+}
+@keyframes move2{
+    0%{
+        left:200px;
+    }
+    100%{
+        left:0px;
+    }
+}
